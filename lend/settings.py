@@ -81,14 +81,17 @@ WSGI_APPLICATION = 'lend.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dbtest',
         'USER': 'postgres',
         'PASSWORD': 'postgresql123',
         'HOST': '127.0.0.1',
         'PORT': '5432',
+
     }
 }
+
 
 
 # Password validation
