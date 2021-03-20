@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     #3rd party apps
     'rest_framework',
-    'djoser',
+    'dj_rest_auth',
     'rest_framework.authtoken',
 
     #My apps
