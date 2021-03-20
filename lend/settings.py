@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'lend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbtest',
+        'NAME': 'rental',
         'USER': 'postgres',
         'PASSWORD': 'postgresql123',
         'HOST': '127.0.0.1',
