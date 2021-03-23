@@ -2,7 +2,8 @@ from rest_framework import serializers
 from . import models
 
 class FriendSerializer(serializers.ModelSerializer):
-    owner = serializers.HiddenField(default = serializers.CurrentUserDefault())
+    
+    owner = serializers.HiddenField(default = serializers.CurrentUserDefault()) #To be able to identify current user
     class Meta:
         model = models.Friend
         fields = ('id', 'name')
