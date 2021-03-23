@@ -2,6 +2,7 @@ from rest_framework import serializers
 from . import models
 
 class FriendSerializer(serializers.ModelSerializer):
+    owner = serializers.HiddenField(default = serializers.CurrentUserDefault())
     class Meta:
         model = models.Friend
         fields = ('id', 'name')
